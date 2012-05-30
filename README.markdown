@@ -15,7 +15,6 @@ Usage is pretty simple.  After you include the js file, the variable HangoutDice
   id: "123$google/456",  // Participant ID of the roller
   timestamp: 1234567890  // Cachebuster, can be ignored
 }
-
 ```
 
 To trigger a roll, call HangoutDice.roll(num, sides).  It can take a third optional parameter that is a local callback for the roll.  Keep in mind that the global callback will still fire. 

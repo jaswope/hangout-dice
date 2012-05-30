@@ -110,10 +110,10 @@ var HangoutDice = (function() {
           for (var i=0;i<roll.num;i++)
             roll.rolls.push((rand.uint32() % roll.sides) + 1);
           if (callbacks[roll.timestamp]) {
-            callbacks[roll.timestamp](roll);
+            callbacks[roll.timestamp](roll, rand);
             callbacks[roll.timestamp] = null;
           }
-          dice.onRoll(roll);
+          dice.onRoll(roll, rand);
         }
       }
     });
