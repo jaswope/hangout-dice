@@ -9,11 +9,11 @@ Usage
 Usage is pretty simple.  After you include the js file, the variable HangoutDice will be added to the global namespace. First set HangoutDice.onRoll to a function that takes an object as a callback.  The object will be formatted as follows:
 ```javascript
 {
-  rolls: [1,5,6],        # Array of rolls that were requested
-  num: 3,                # Number of dice rolled
-  sides: 6,              # Number of sides on the dice
-  id: "123$google/456",  # Participant ID of the roller
-  timestamp: 1234567890  # Cachebuster, can be ignored
+  rolls: [1,5,6],        // Array of rolls that were requested
+  num: 3,                // Number of dice rolled
+  sides: 6,              // Number of sides on the dice
+  id: "123$google/456",  // Participant ID of the roller
+  timestamp: 1234567890  // Cachebuster, can be ignored
 }
 
 ```
