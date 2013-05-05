@@ -1,12 +1,11 @@
-Hangout Dice
-============
+# Hangout Dice
 
 Hangout Dice is a library for generating dice rolls in a Google+ hangout. It uses the ms precision of the event metatdata in the shared state object to provide the entropy for the rolls, and a pure JS random number implementation to allow all connected clients see the same results for any given roll.
 
-Usage
-=====
+## Usage
 
-Usage is pretty simple.  After you include the js file, the variable HangoutDice will be added to the global namespace. First set HangoutDice.onRoll to a function that takes an object as a callback.  The object will be formatted as follows:
+Use of Hangout Dice is pretty simple.  After you include the .js file, the variable HangoutDice will be added to the global namespace. First set HangoutDice.onRoll to a function that takes an object as a callback.  The object will be formatted as follows:
+
 ```javascript
 {
   rolls: [1,5,6],        // Array of rolls that were requested
