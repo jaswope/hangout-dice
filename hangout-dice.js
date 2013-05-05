@@ -11,6 +11,7 @@ HangoutDice = (function() {
       var h, i;
       data = data.toString();
       i = 0;
+      
       while (i < data.length) {
         n += data.charCodeAt(i);
         h = 0.02519603282416938 * n;
@@ -124,6 +125,7 @@ HangoutDice = (function() {
       
       while (idx < e.addedKeys.length) {
         obj = e.addedKeys[idx];
+        
         if (obj.key === rollKey) {
           roll = JSON.parse(obj.value);
           roll.rolls = [];
